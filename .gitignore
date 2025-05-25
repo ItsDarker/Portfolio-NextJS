@@ -1,0 +1,16 @@
+# Ignore build output
+.next
+out
+node_modules
+
+# OS-specific
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env
+.env.local
+.env.*.local
