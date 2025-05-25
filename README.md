@@ -40,7 +40,7 @@ A modern, responsive portfolio website built with Next.js, showcasing my project
 ### Installation
 1. Clone the repository
    ```bash
-   git clone [[your-repo-link]](https://github.com/ItsDarker/Portfolio-NextJS)```
+   git clone https://github.com/ItsDarker/Portfolio-NextJS```
 
 2. Install dependencies
    ```bash
