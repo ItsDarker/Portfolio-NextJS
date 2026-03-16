@@ -1,28 +1,68 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
-import { SiKalilinux, SiWindows, SiSelenium, SiUipath } from 'react-icons/si';
+import { DiReact, DiPython, DiDatabase } from 'react-icons/di';
+import { SiKalilinux, SiWindows } from 'react-icons/si';
+import { BiLock, BiShield } from 'react-icons/bi';
+import { AiOutlineApi, AiOutlineAntDesign } from 'react-icons/ai';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 const Technologies = () =>  (
   <Section id="tech">
-    <SectionDivider divider />
-    <SectionTitle>Technologies</SectionTitle>
+    <SectionTitle>Technologies & Skills</SectionTitle>
     <SectionText>
-      I've worked with a range of technologies in web development, security testing, and process automation.
-      From Back-end Development to RPA Solutions.
+      Expertise in cybersecurity infrastructure, cloud security, penetration testing, and secure development.
+      Proficient across security tools, cloud platforms, and full-stack development.
     </SectionText>
     <List>
+      <ListItem>
+        <picture>
+          <BiLock size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>Security & IAM</ListTitle>
+          <ListParagraph>
+            Active Directory, RBAC, <br />
+            MFA, Zero Trust, <br />
+            NIST Framework
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <picture>
+          <BiShield size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>Penetration Testing</ListTitle>
+          <ListParagraph>
+            Burp Suite, Metasploit, <br />
+            Nmap, Wireshark, <br />
+            Kali Linux
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
       <ListItem>
         <picture>
           <SiKalilinux size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>Security Tools</ListTitle>
+          <ListTitle>SIEM & Monitoring</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            Metasploit, Nmap, <br />
-            Wireshark & More
+            Wazuh SIEM, Splunk, <br />
+            Log Analysis, Threat <br />
+            Detection, EDR
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <picture>
+          <AiOutlineApi size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>Cloud Security</ListTitle>
+          <ListParagraph>
+            GCP IAM, AWS Security, <br />
+            CloudTrail, Security <br />
+            Hub, DevSecOps
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -31,34 +71,37 @@ const Technologies = () =>  (
           <DiReact size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>Front-End</ListTitle>
+          <ListTitle>Front-End Development</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            React.js and Next.js
+            React.js, Next.js, <br />
+            JavaScript, TypeScript, <br />
+            Styled-Components
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <picture>
-          <DiFirebase size="3rem" />
+          <DiPython size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>Back-End</ListTitle>
+          <ListTitle>Backend & Automation</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            Python and Databases
+            Python, Bash, PowerShell, <br />
+            REST APIs, Machine <br />
+            Learning, Automation
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <picture>
-          <DiZend size="3rem" />
+          <DiDatabase size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
+          <ListTitle>Databases</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            tools like Figma
+            MySQL, PostgreSQL, <br />
+            SQLite, Neo4j, <br />
+            Firebase
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -69,26 +112,14 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Operating Systems</ListTitle>
           <ListParagraph>
-            Proficient in <br />
-            Windows and Linux
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <SiSelenium size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Automation</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            Selenium Python, UiPath, <br />
-            and RPA Solutions
+            Linux, Windows, <br />
+            Kali Linux, System <br />
+            Administration
           </ListParagraph>
         </ListContainer>
       </ListItem>
     </List>
-    <SectionDivider colorAlt />
+    <SectionDivider divider />
   </Section>
 );
 

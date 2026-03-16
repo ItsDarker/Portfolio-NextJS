@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.github.com)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(curl -s http://localhost:3002)",
+      "Bash(ls -la \"c:\\\\Personal Files\\\\Portfolio-NextJS\\\\public\\\\images\"\" 2>/dev/null | head -20 || echo \"Images folder check: \")",
+      "Bash(cp cyberatt.png threat_intel.png)",
+      "Bash(cp cyberatt.png ips.png)",
+      "Bash(cp cyberatt.png federated.png)",
+      "Bash(cp home_auto.png build_track.png)"
+    ]
+  }
+}

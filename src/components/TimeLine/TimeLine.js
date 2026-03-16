@@ -46,22 +46,13 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-      I have completed my undergraduate degree in Computer Science in 2024, 
-        equipped with valuable experience from three internships focusing on 
-        Full Stack Development and Automation. My professional journey has 
-        been marked by hands-on experience in developing robust applications 
-        and implementing automated solutions. Following my undergraduate studies, 
-        I earned the opportunity to pursue a Master's degree in Cybersecurity 
-        at the prestigious Illinois Institute of Technology in Chicago. 
-        Currently, I am advancing my expertise in Cybersecurity, with an 
-        expected graduation date of May 2026. Throughout my academic 
-        progression from high school to graduate studies, I have cultivated 
-        a diverse skill set spanning development, automation, and security. 
-        I firmly believe in the power of versatility - being proficient 
-        across multiple domains provides a unique advantage in today's 
-        rapidly evolving tech landscape. This multifaceted approach has 
-        enabled me to adapt quickly to new technologies and bring innovative 
-        solutions to complex challenges.
+        I'm a security-focused engineer pursuing a Master's degree in Cybersecurity at Illinois Institute of Technology,
+        with hands-on experience in Identity & Access Management, SIEM deployment, DevSecOps, and secure development.
+        Currently working as a Full-Stack DevSecOps Intern at Geo Digital Partners, where I implement security controls
+        and IAM policies across cloud environments. My background spans full-stack development, cybersecurity infrastructure,
+        machine learning for threat detection, and penetration testing. I hold certifications in CNSP, CSEH+, Security+,
+        and Google Cybersecurity. I'm passionate about the intersection of offensive security and defensive architecture,
+        continuously learning through hands-on labs (HackTheBox, PicoCTF, OverTheWire) and contributing to security research projects.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

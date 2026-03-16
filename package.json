@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-   "build": "next build",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "framer-motion": "^12.37.0",
     "next": "^15.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

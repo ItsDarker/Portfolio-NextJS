@@ -2,24 +2,30 @@ import React from 'react';
 
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
-
-const data = [
-  { number: 30, text: 'Open Source Projects'},
-  { number: 4, text: 'Cybersecurity Certifications', },
-  { number: 3, text: 'Internships', },
-];
+import { achievementsData, certificationsData } from '../../constants/constants';
 
 const Acomplishments = () => (
   <Section>
     <SectionTitle>Personal Achievements</SectionTitle>
     <Boxes>
-      {data.map((card, index) => (
+      {achievementsData.map((card, index) => (
         <Box key={index}>
           <BoxNum>{`${card.number}+`}</BoxNum>
           <BoxText>{card.text}</BoxText>
         </Box>
       ))}
     </Boxes>
+
+    <SectionTitle style={{ marginTop: '60px' }}>Certifications</SectionTitle>
+    <Boxes>
+      {certificationsData.map((cert, index) => (
+        <Box key={index}>
+          <BoxNum style={{ fontSize: '1.5rem' }}>{cert.name}</BoxNum>
+          <BoxText>{cert.fullName}</BoxText>
+        </Box>
+      ))}
+    </Boxes>
+
     <SectionDivider/>
   </Section>
 );
